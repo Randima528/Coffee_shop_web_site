@@ -54,3 +54,55 @@ header{
     text-transform: uppercase;
     font-weight: 500;
 }
+.navbar a:hover{
+    background-color: var(--main-color);
+    border-radius: 0.2rem;
+    transition: 0.5s all linear;
+
+}
+.header-icon{
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10000;
+    display: flex;
+    column-gap: 0.8rem;
+
+}
+.header-icon i {
+   color: var(--bg-color);
+}
+#menu-icon{
+   color: var(--bg-color);
+   font-size: 24px;
+   z-index: 100001;
+   cursor: pointer;
+   display: none; 
+}
+.search-box{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%);
+    background: var(--bg-color);
+    width: 100%;
+}
+.search-box.active{
+    top: 110%;
+    box-shadow: var(--box-shadow);
+    transition: 0.25s all linear;
+}
+.search-box input{
+    padding: 20px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--main-color);
+
+
+}
+.search-box input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
