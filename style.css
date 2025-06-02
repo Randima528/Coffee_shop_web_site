@@ -307,6 +307,19 @@ header{
     flex-direction: column;
     row-gap: 0.5rem;
 }
+
+@keyframes hero{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+}
+.home-img img{
+    animation: hero 5s infinite linear;
+}
+
 @media(max-width:1058px){
     header{
         padding: 16px 60px;
