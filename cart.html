@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart | Golden Bean</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<!--Navbar-->
+  <header>
+    <a href="#" class="logo">
+      <img src="img/logo.png" alt="logo">
+    </a>
+    <!--Menu Icon-->
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <!--links-->
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#custormers">Custormers</a></li>
+    </ul>
+
+    <!--Icons-->
+    <div class="header-icon">
+    <i class='bx bx-cart'></i>
+    <i class='bx bx-search-alt-2' id="search-icon"></i>
+  </div>
+
+  <!--Search Box-->
+  <div class="search-box">
+    <input type="search" placeholder="Search Here......">
+  </div>
+  </header>
+
+
+  <main id="cart-container">
+    <section id="cart-items"></section>
+    <div id="cart-summary">
+      <h3>Total: $<span id="total-price">0.00</span></h3>
+      <button onclick="checkoutCart()">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
