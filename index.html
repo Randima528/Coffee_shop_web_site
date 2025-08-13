@@ -19,7 +19,7 @@
 
     <!--links-->
     <ul class="navbar">
-      <li><a href="#home">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#products">Products</a></li>
       <li><a href="#custormers">Custormers</a></li>
@@ -27,7 +27,14 @@
 
     <!--Icons-->
     <div class="header-icon">
-    <i class='bx bx-cart'></i>
+
+    <!--Cart icon with count -->
+<a href="cart.html" class="cart-link">
+  <i class='bx bx-cart'></i>
+  <span id="cartCount" class="cart-count">0</span>
+</a>
+<!--Cart icon with count -->
+
     <i class='bx bx-search-alt-2' id="search-icon"></i>
   </div>
 
@@ -69,7 +76,7 @@
                Our story is shaped by the friendships formed over cappuccinos, the first dates shared over lattes,
                 and the daily rituals that begin at our counter. We’re proud of where we’ve come from and excited for what’s ahead.</p>
 
-              <a href="#" class="btn">Learn More</a> 
+              <a href="about.html" class="btn">Learn More</a> 
     </div>
   </section>
 
@@ -86,7 +93,13 @@
         <h3>Perfect Start Arabica Beans</h3>
         <div class="content">
           <span>Rs.7500/=</span>
-          <a href="#">Add to cart</a>
+
+<a href="#" class="add-to-cart" data-id="Product1">Add to cart</a>
+
+<a href="#" class="view-product" data-id="Product1">View</a>
+
+
+
         </div>
       </div>
 
@@ -95,7 +108,13 @@
         <h3>Botero Classic Roast</h3>
         <div class="content">
           <span>Rs.6000/=</span>
-          <a href="#">Add to cart</a>
+
+<a href="#" class="add-to-cart" data-id="Product2">Add to cart</a>
+
+<a href="#" class="view-product" data-id="Product2">View</a>
+
+
+
         </div>
       </div>
 
@@ -113,7 +132,13 @@
         <h3>Taste Select Artisan Blend</h3>
         <div class="content">
           <span>Rs.5500/=</span>
-          <a href="#">Add to cart</a>
+
+<a href="#" class="add-to-cart" data-id="Product3">Add to cart</a>
+
+<a href="#" class="view-product" data-id="Product3">View</a>
+
+
+
         </div>
       </div>
 
@@ -122,7 +147,13 @@
         <h3>Sacred Grounds Organic Arabica</h3>
         <div class="content">
           <span>Rs.6500/=</span>
-          <a href="#">Add to cart</a>
+
+<a href="#" class="add-to-cart" data-id="Product4">Add to cart</a>
+
+<a href="#" class="view-product" data-id="Product4">View</a>
+
+
+
         </div>
       </div>
 
@@ -131,7 +162,13 @@
         <h3>Presto Coffee Bags – Smooth Italian</h3>
         <div class="content">
           <span>Rs.7500/=</span>
-          <a href="#">Add to cart</a>
+
+<a href="#" class="add-to-cart" data-id="Product5">Add to cart</a>
+
+<a href="#" class="view-product" data-id="Product5">View</a>
+
+
+
         </div>
       </div>
 
@@ -240,6 +277,20 @@
       </div>
     </div>
   </section>
+
+  
+<!--Product Modal -->
+<div id="productModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <div class="modal-body" id="modalBody">
+      <!-- Product details will be injected here by JS -->
+    </div>
+  </div>
+</div>
+<!--Product Modal -->
+
+
    
     
   <script src="script.js"></script>  
