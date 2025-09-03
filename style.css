@@ -48,22 +48,66 @@ header{
 .logo img{
     width: 60px;
 }
-.navbar{
+
+
+.navbar {
     display: flex;
+    list-style: none; /* NEW */
 }
-.navbar a{
+
+.navbar a {
     padding: 8px 17px;
     color: var(--bg-color);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
+    text-decoration: none; /* NEW */
 }
-.navbar a:hover{
+
+.navbar a:hover {
     background-color: var(--main-color);
     border-radius: 0.2rem;
     transition: 0.5s all linear;
-
 }
+
+/* NEW: Dropdown styling */
+.dropdown {
+    position: relative; /* NEW */
+}
+
+.dropdown-menu { 
+    display: none; /* NEW */
+    position: absolute; /* NEW */
+    top: 100%; /* NEW */
+    left: 0; /* NEW */
+    background: var(--text-color); /* NEW */
+    list-style: none; /* NEW */
+    padding: 0; /* NEW */
+    margin: 0; /* NEW */
+    min-width: 140px; /* NEW */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* NEW */
+    border-radius: 0.2rem; /* NEW */
+    z-index: 1000; /* NEW */
+}
+
+.dropdown-menu li a { 
+    display: block; /* NEW */
+    padding: 10px 15px; /* NEW */
+    color: var(--bg-color); /* NEW */
+    text-transform: none; /* NEW */
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--main-color); /* NEW */
+    color: #fff; /* NEW */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu { 
+    display: block; /* NEW */
+}
+
+
 .header-icon{
     font-size: 22px;
     cursor: pointer;
@@ -269,6 +313,13 @@ header{
     grid-template-columns: repeat(auto-fit,minmax(240px,auto));
     gap: 1.5rem;
 
+    background: var(--bg-color); /* NEW - light background */
+    padding: 40px 20px; /* NEW */
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1); /* NEW - top shadow */
+    border-top: 1px solid var(--secondary-color); /* NEW - soft border line */
+    color: var(--text-color); /* NEW - darker text for readability */
+
+
 }
 .footer-box h3{
     font-size: 1.2rem;
@@ -279,6 +330,20 @@ header{
     font-size: 0.938rem;
     margin-bottom: 10px;
 }
+
+.footer-bottom { /* NEW */
+    background: var(--text-color); /* dark thin layer */
+    text-align: center;
+    padding: 10px 0;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-top: 10px; /* small gap above */
+}
+.footer-bottom p { /* NEW */
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
 .social{
     display: flex;
     align-items: center;
@@ -316,9 +381,10 @@ header{
         transform: translateY(100px);
     }
 }
-.home-img img{
+/**.home-img img{
     animation: hero 5s infinite linear;
-}
+
+}**/
 
 @media(max-width:1058px){
     header{
