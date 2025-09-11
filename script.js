@@ -1,21 +1,46 @@
 let search = document.querySelector('.search-box');
+let navbar = document.querySelector('.navbar');
+let header = document.querySelector('header');
 
-document.querySelector('#search-icon').onclick =() =>{
+document.querySelector('#search-icon').onclick = () => {
     search.classList.toggle('active');
     navbar.classList.remove('active');
-    
-}
+};
 
-let navbar = document.querySelector('.navbar');
 
-document.querySelector('#menu-icon').onclick = () =>{
+
+
+document.querySelector('#menu-icon').onclick = () => {
     navbar.classList.toggle('active');
     search.classList.remove('active');
-}
-window.onscroll = () =>{
+};
+
+window.onscroll = () => {
     navbar.classList.remove('active');
     search.classList.remove('active');
-}
+};
+
+window.addEventListener('scroll', () => {
+    header.classList.toggle('shadow', window.scrollY > 0);
+});
+
+
+
+
+
+
+// Toggle blur and show text on coffee-type-card click
+document.querySelectorAll('.coffee-type-card').forEach(card => {
+  card.addEventListener('click', function (e) {
+    // Prevent toggling if clicking on the label or desc itself
+    if (e.target.classList.contains('coffee-type-label') || e.target.classList.contains('coffee-type-desc')) return;
+    card.classList.toggle('active');
+  });
+});
+
+
+
+
 
 
 // --- NEW CODE START: Cart & Modal Functionality ---

@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Bean</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <!--Navbar-->
+  <header>
+    <a href="#" class="logo">
+      <img src="img/logo.png" alt="logo">
+    </a>
+    <!--Menu Icon-->
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <!--links-->
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+
+      <!-- NEW: Dropdown Menu -->
+  <li class="dropdown"> <!-- NEW -->
+    <a href="#products">Products ▾</a> <!-- NEW -->
+    <ul class="dropdown-menu"> <!-- NEW -->
+      <li><a href="hot-coffee.html">Hot Coffee</a></li> <!-- NEW -->
+      <li><a href="cold-coffee.html">Cold Coffee</a></li> <!-- NEW -->
+      <li><a href="packed-coffee.html">Packed Coffee</a></li> <!-- NEW -->
+    </ul> <!-- NEW -->
+  </li> <!-- NEW -->
+
+      <li><a href="index.html">Custormers</a></li>
+    </ul>
+
+    <!--Icons-->
+    <div class="header-icon" style="position: relative;">
+
+    <!--Cart icon with count -->
+<a href="cart.html" class="cart-link">
+  <i class='bx bx-cart'></i>
+  <span id="cartCount" class="cart-count">0</span>
+</a>
+
+<!--Search Box-->
+    <i class='bx bx-search-alt-2' id="search-icon"></i>
+    <div class="search-box">
+      
+    <input type="search" placeholder="Search Here......">
+  </div>
+
+  </div>
+
+  
+  
+  </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about-coffee.jpg" alt="About Golden Bean">
+        </div>
+        <div class="about-text">
+            <h2>About Golden Bean</h2>
+            <p>
+                Welcome to Golden Bean, your neighborhood coffee haven! Since our founding in 2020, we have been passionate about serving the finest Arabica blends and creating a cozy space for coffee lovers to connect, relax, and enjoy. Our beans are ethically sourced, roasted to perfection, and brewed with love by our expert baristas.
+            </p>
+            <p>
+                Whether you’re here for your morning pick-me-up, a sweet treat, or a friendly chat, Golden Bean is dedicated to making every visit special. Thank you for being part of our coffee family!
+            </p>
+            <a href="index.html#products" class="btn">Explore Our Coffee</a>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+  <section class="footer">
+    <div class="footer-box">
+      <h3>Coffee Shop</h3>
+      <p>At Golden Bean, we serve more than just coffee — we craft experiences.
+         From freshly brewed espresso to handcrafted pastries, every cup and bite is made with passion.
+          Whether you're here to relax, work, or catch up with friends, Golden Bean is your cozy corner for warmth,
+           flavor, and connection.</p>
+
+         <div class="social">
+          <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="#"><i class='bx bxl-twitter' ></i></a>
+          <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="#"><i class='bx bxl-tiktok'></i></a>
+         </div>
+    </div>
+
+    <div class="footer-box">
+      <h3>Support</h3>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Return Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      
+    </div>
+
+    <div class="footer-box">
+      <h3>View Guides</h3>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog Post</a></li>
+      <li><a href="#">Our Branches</a></li>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <div class="contact">
+        <span><i class='bx bx-map'></i>30,dharmaloka Road, Colombo 06</span>
+        <span><i class='bx bx-phone-call'></i>+94 751234567</span>
+        <span><i class='bx bx-envelope'></i>goldenbean@shop.com</span>
+      </div>
+    </div>
+
+
+  </section>
+
+     <!-- Footer Bottom (NEW) -->
+<div class="footer-bottom">
+  <p>© 2025 Randima Nethmini. All Rights Reserved.</p>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

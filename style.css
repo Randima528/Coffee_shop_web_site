@@ -45,6 +45,10 @@ header{
     transition: 0.5s linear;
 
 }
+header.shadow{
+    background: var(--text-color);
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
 .logo img{
     width: 60px;
 }
@@ -126,33 +130,40 @@ header{
    cursor: pointer;
    display: none; 
 }
-.search-box{
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%);
+.search-box {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    transform: translateX(-50%);
     background: var(--bg-color);
-    width: 100%;
+    width: 820px;
+    transition: 0.2s;
+    display: none;
+    border-radius: 0 0 0.3rem 0.3rem;
+    
 }
-.search-box.active{
-    top: 110%;
+
+.search-box.active {
+    top: 80%;
     box-shadow: var(--box-shadow);
-    transition: 0.25s all linear;
+    transition: 0.2s;
+    display: block;
 }
-.search-box input{
+
+.search-box input {
     padding: 20px;
     border: none;
     outline: none;
-    width: 100%;
+    width: 50%;
     font-size: 1rem;
     color: var(--main-color);
-
-
 }
-.search-box input::placeholder{
+
+.search-box input::placeholder {
     font-size: 1rem;
     font-weight: 500;
 }
+
 
 .home{
     width: 100%;
@@ -216,6 +227,108 @@ header{
     font-size: 1.8rem;
     text-transform: uppercase;
 }
+
+
+/* Coffee Types Showcase */
+.coffee-types-showcase {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 10px 10px 10px 10px;
+  padding: 0 0;
+ flex-wrap: wrap;
+}
+
+.coffee-type-card {
+  position: relative;
+  width: 430px;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(44, 29, 13, 0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  background: #fff;
+}
+
+.coffee-type-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.4s, transform 0.4s;
+}
+
+.coffee-type-card.active img {
+  filter: blur(5px) brightness(0.7);
+  transform: scale(1.04);
+}
+
+
+
+.coffee-type-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background: linear-gradient(0deg, rgba(44,29,13,0.85) 80%, rgba(44,29,13,0.1) 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 200px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  transition: background 0.3s;
+}
+
+
+
+
+.coffee-type-card .coffee-type-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(44,29,13,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  padding: 2rem 1.2rem 3.5rem 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 1rem;
+  transition: opacity 0.4s cubic-bezier(.4,2,.6,1), transform 0.4s;
+  z-index: 3;
+  transform: scale(0.98) translateY(20px);
+}
+
+.coffee-type-card.active .coffee-type-desc {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1) translateY(0);
+}
+
+.coffee-type-card:hover {
+  box-shadow: 0 8px 32px rgba(44, 29, 13, 0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.coffee-type-card:hover .coffee-type-label {
+  background: linear-gradient(0deg, #bc9667 80%, rgba(44,29,13,0.1) 100%);
+  color: #1b1b1b;
+}
+
+
+
+
+
 .product-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,auto));
@@ -471,6 +584,37 @@ header{
         font-size: 1.2rem;
     }
 }
+
+/* Responsive */
+@media (max-width: 991px) {
+  .coffee-types-showcase {
+    gap: 1rem;
+  }
+  .coffee-type-card {
+    width: 200px;
+    height: 140px;
+  }
+  .coffee-type-label {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+  .coffee-type-card .coffee-type-desc {
+    font-size: 0.95rem;
+    padding: 1rem 0.5rem 2.2rem 0.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .coffee-types-showcase {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .coffee-type-card {
+    width: 90vw;
+    height: 160px;
+  }
+}
+
 
 /* --- NEW CODE START: Cart Count Badge --- */
 .cart-link {

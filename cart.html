@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Cart | Golden Bean</title>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Bean</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-
-<!--Navbar-->
+  <!--Navbar-->
   <header>
     <a href="#" class="logo">
       <img src="img/logo.png" alt="logo">
@@ -19,23 +21,42 @@
     <!--links-->
     <ul class="navbar">
       <li><a href="index.html">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#custormers">Custormers</a></li>
+      <li><a href="about.html">About Us</a></li>
+
+      <!-- NEW: Dropdown Menu -->
+  <li class="dropdown"> <!-- NEW -->
+    <a href="#products">Products ▾</a> <!-- NEW -->
+    <ul class="dropdown-menu"> <!-- NEW -->
+      <li><a href="hot-coffee.html">Hot Coffee</a></li> <!-- NEW -->
+      <li><a href="cold-coffee.html">Cold Coffee</a></li> <!-- NEW -->
+      <li><a href="packed-coffee.html">Packed Coffee</a></li> <!-- NEW -->
+    </ul> <!-- NEW -->
+  </li> <!-- NEW -->
+
+      <li><a href="index.html">Custormers</a></li>
     </ul>
 
     <!--Icons-->
-    <div class="header-icon">
-    <i class='bx bx-cart'></i>
-    <i class='bx bx-search-alt-2' id="search-icon"></i>
-  </div>
+    <div class="header-icon" style="position: relative;">
 
-  <!--Search Box-->
-  <div class="search-box">
+    <!--Cart icon with count -->
+<a href="cart.html" class="cart-link">
+  <i class='bx bx-cart'></i>
+  <span id="cartCount" class="cart-count">0</span>
+</a>
+
+<!--Search Box-->
+    <i class='bx bx-search-alt-2' id="search-icon"></i>
+    <div class="search-box">
+      
     <input type="search" placeholder="Search Here......">
   </div>
-  </header>
 
+  </div>
+
+  
+  
+  </header>
 
 <!-- NEW CART CODE START -->
 <section class="cart-page" id="cart" style="padding-top:120px; display:flex; flex-direction:column; align-items:center;">
