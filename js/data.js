@@ -11,16 +11,16 @@ const initialProducts = [
   { id: "pk06", category: "packed", name: "Presto Coffee Bags - Italian", price: 7500, img: "img/p6.png" },
   
   // Hot Coffee
-  { id: "hc01", category: "hot", name: "Espresso", price: 1500, img: "img/hot-espresso.jpg" },
-  { id: "hc02", category: "hot", name: "Classic Americano", price: 1600, img: "img/hot-americano.jpg" },
-  { id: "hc03", category: "hot", name: "Silky Latte", price: 1800, img: "img/hot-latte.jpg" },
-  { id: "hc04", category: "hot", name: "Foamy Cappuccino", price: 1800, img: "img/hot-cappuccino.jpg" },
+  { id: "hc01", category: "hot", name: "Espresso", price: 1500, img: "img/hot1.png" },
+  { id: "hc02", category: "hot", name: "Classic Americano", price: 1600, img: "img/hot2.png" },
+  { id: "hc03", category: "hot", name: "Silky Latte", price: 1800, img: "img/hot3.png" },
+  { id: "hc04", category: "hot", name: "Foamy Cappuccino", price: 1800, img: "img/hot4.png" },
 
   // Cold Coffee
-  { id: "cc01", category: "cold", name: "Iced Latte", price: 1800, img: "img/cold-iced-latte.jpg" },
-  { id: "cc02", category: "cold", name: "Rich Iced Mocha", price: 2000, img: "img/cold-iced-mocha.jpg" },
-  { id: "cc03", category: "cold", name: "Smooth Cold Brew", price: 1700, img: "img/cold-brew.jpg" },
-  { id: "cc04", category: "cold", name: "Blended Frappuccino", price: 2200, img: "img/cold-frappuccino.jpg" }
+  { id: "cc01", category: "cold", name: "Iced Latte", price: 1800, img: "img/cold1.png" },
+  { id: "cc02", category: "cold", name: "Rich Iced Mocha", price: 2000, img: "img/cold2.png" },
+  { id: "cc03", category: "cold", name: "Smooth Cold Brew", price: 1700, img: "img/cold3.png" },
+  { id: "cc04", category: "cold", name: "Blended Frappuccino", price: 2200, img: "img/cold4.png" }
 ];
 
 // Function to get all products from localStorage
