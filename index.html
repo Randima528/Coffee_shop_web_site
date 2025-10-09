@@ -23,14 +23,7 @@
       <li><a href="about.html">About Us</a></li>
 
       <!-- NEW: Dropdown Menu -->
-  <li class="dropdown"> <!-- NEW -->
-    <a href="#products">Products ▾</a> <!-- NEW -->
-    <ul class="dropdown-menu"> <!-- NEW -->
-      <li><a href="hot-coffee.html">Hot Coffee</a></li> <!-- NEW -->
-      <li><a href="cold-coffee.html">Cold Coffee</a></li> <!-- NEW -->
-      <li><a href="packed-coffee.html">Packed Coffee</a></li> <!-- NEW -->
-    </ul> <!-- NEW -->
-  </li> <!-- NEW -->
+  <li><a href="products.html">Products</a></li> <!-- NEW -->
 
       <li><a href="#custormers">Custormers</a></li>
     </ul>
@@ -44,12 +37,7 @@
   <span id="cartCount" class="cart-count">0</span>
 </a>
 
-<!--Search Box-->
-    <i class='bx bx-search-alt-2' id="search-icon"></i>
-    <div class="search-box">
-      
-    <input type="search" placeholder="Search Here......">
-  </div>
+
 
   </div>
 
@@ -96,132 +84,28 @@
 
   
 <section class="coffee-types-showcase">
-  <div class="coffee-type-card">
+  <a href="products.html?category=hot" class="coffee-type-card">
     <img src="img/hotcoffee.jpg" alt="Hot Coffee">
-    <li><a href="hot-coffee.html"><div class="coffee-type-label">Experience the warmth and aroma of our signature hot coffee,
-       brewed from handpicked beans and perfected by our expert baristas.
-        Ideal for cozy mornings and chilly evenings.</div></a></li>
-    <div class="coffee-type-desc">
-      Experience the warmth and aroma of our signature hot coffee,
-       brewed from handpicked beans and perfected by our expert baristas.
-        Ideal for cozy mornings and chilly evenings.
-    </div>
-  </div>
-  <div class="coffee-type-card">
+    <div class="coffee-type-label">Experience the warmth and aroma of our signature hot coffee...</div>
+  </a>
+  <a href="products.html?category=cold" class="coffee-type-card">
     <img src="img/icedcoffee.jpg" alt="Cold Coffee">
-    <li><a href="cold-coffee.html"><div class="coffee-type-label">Refresh yourself with our cold coffee selection,
-       featuring smooth blends poured over ice. 
-       The perfect pick-me-up for sunny days and energetic afternoons.</div></a></li>
-    <div class="coffee-type-desc">
-      Refresh yourself with our cold coffee selection,
-       featuring smooth blends poured over ice. 
-       The perfect pick-me-up for sunny days and energetic afternoons.
-    </div>
-  </div>
-  <div class="coffee-type-card">
+    <div class="coffee-type-label">Refresh yourself with our cold coffee selection...</div>
+  </a>
+  <a href="products.html?category=packed" class="coffee-type-card">
     <img src="img/packedcoffee.jpg" alt="Packed Coffee">
-    <li><a href="packed-coffee.html"><div class="coffee-type-label">Take the Golden Bean experience home!
-       Our packed coffee range brings you freshly roasted beans and ground blends,
-        ready for your own brewing adventures.</div></a></li>
-    <div class="coffee-type-desc">
-      Take the Golden Bean experience home!
-       Our packed coffee range brings you freshly roasted beans and ground blends,
-        ready for your own brewing adventures.
-    </div>
-  </div>
+    <div class="coffee-type-label">Take the Golden Bean experience home!</div>
+  </a>
 </section>
 
 
   <!--Products-->
   <section class="products" id="products">
-    <div class="heading">
-      <h2>Our Popular Products</h2>
+   <div class="heading">
+  <h2>Our Popular Products</h2>
+</div>
+<div class="product-container" id="product-container" data-category="popular">
     </div>
-
-    <!--container-->
-    <div class="product-container">
-      <div class="box">
-        <img src="img/p1.png" alt="Product1">
-        <h3>Perfect Start Arabica Beans</h3>
-        <div class="content">
-          <span>Rs.7500/=</span>
-
-<a href="#" class="add-to-cart" data-id="p1">Add to cart</a>
-
-
-
-
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="img/p2.png" alt="Product2">
-        <h3>Botero Classic Roast</h3>
-        <div class="content">
-          <span>Rs.6000/=</span>
-
-<a href="#" class="add-to-cart" data-id="p2">Add to cart</a>
-
-
-
-
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="img/p3.png" alt="Product3">
-        <h3>Patch Roast House Blend</h3>
-        <div class="content">
-          <span>Rs.7000/=</span>
-<a href="#" class="add-to-cart" data-id="p3">Add to cart</a>
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="img/p4.png" alt="Product4">
-        <h3>Taste Select Artisan Blend</h3>
-        <div class="content">
-          <span>Rs.5500/=</span>
-
-<a href="#" class="add-to-cart" data-id="p4">Add to cart</a>
-
-
-
-
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="img/p5.png" alt="Product5">
-        <h3>Sacred Grounds Organic Arabica</h3>
-        <div class="content">
-          <span>Rs.6500/=</span>
-
-<a href="#" class="add-to-cart" data-id="p5">Add to cart</a>
-
-
-
-
-        </div>
-      </div>
-
-      <div class="box">
-        <img src="img/p6.png" alt="Product6">
-        <h3>Presto Coffee Bags – Smooth Italian</h3>
-        <div class="content">
-          <span>Rs.7500/=</span>
-
-<a href="#" class="add-to-cart" data-id="p6">Add to cart</a>
-
-
-
-
-        </div>
-      </div>
-
-
-    </div>
-
   </section>
 
   <!--Custormers-->
@@ -347,6 +231,7 @@
 
    
     
-  <script src="script.js"></script>  
+  <script src="js/data.js"></script>  
+<script src="js/main.js"></script>
 </body>
 </html>
