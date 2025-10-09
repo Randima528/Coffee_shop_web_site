@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Golden Bean</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Golden Bean Dashboard</h1>
+        <nav>
+            <a href="../index.html" target="_blank">View Live Site</a>
+            <button id="logout-btn">Logout <i class='bx bx-log-out'></i></button>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="product-management">
+            <h2>Manage Products</h2>
+            <button id="show-add-form-btn" class="btn-primary">Add New Product</button>
+            <div class="product-table-container">
+                <table id="product-table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price (Rs.)</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Add New Product</h2>
+            <form id="product-form">
+                <input type="hidden" id="product-id">
+                <div class="input-group">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="product-category">Category</label>
+                    <select id="product-category" required>
+                        <option value="hot">Hot Coffee</option>
+                        <option value="cold">Cold Coffee</option>
+                        <option value="packed">Packed Coffee</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="product-price">Price</label>
+                    <input type="number" id="product-price" required>
+                </div>
+                <div class="input-group">
+                    <label for="product-img">Image Path (e.g., img/p1.png)</label>
+                    <input type="text" id="product-img" required>
+                </div>
+                <button type="submit" class="btn-primary">Save Product</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/data.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
