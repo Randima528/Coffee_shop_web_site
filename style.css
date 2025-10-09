@@ -338,53 +338,82 @@ header.shadow{
 
 }
 .product-container .box{
+
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden; /* Ensures image corners are rounded */
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    padding: 10px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
-    border-radius: 0.5rem;
-    box-shadow: var(--box-shadow);
+    
+    
+}
+
+.product-container .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
 }
 .product-container img{
     width: 100%;
     height: 250px;
     object-fit: contain;
     object-position: center;
-    padding: 20px;
-    background: #f1f1f1;
-    border-radius: 0.5rem;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid #f0f0f0;
 }
 .product-container .box h3{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
+    color: #333;
+    padding: 0 1.2rem; /* Add horizontal padding */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    flex-grow: 1;
     text-transform: uppercase;
-    margin: 0.5rem 0.5rem;
+    
 }
 .product-container .box .content{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 1.2rem 1.2rem;
+    margin-top: auto; /* Pushes content to the bottom */
 }
 .product-container .box .content span{
-    padding: 0 1rem;
-    color: var(--bg-color);
-    background: var(--main-color);
-    border-radius: 4px;
-    font-weight: 500;
+    padding: 0;
+    color: var(--main-color);
+    background: none; /* Remove old background */
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 .product-container .box .content a{
-    border: 2px solid var(--main-color);
-    padding: 0 1rem;
-    color: var(--text-color);
-    border-radius: 4px;
-    text-transform: uppercase;
+
+    background: var(--text-color);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: none; /* remove uppercase */
+    border: 2px solid var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    
 }
 .product-container .box .content a:hover{
-    background-color: var(--main-color);
-    color: var(--bg-color);
-    transition: 1s all linear;
-      
+    background: #fff;
+    color: var(--text-color);
+         
 }
+
+
+
+
+
 .custormers-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,auto));

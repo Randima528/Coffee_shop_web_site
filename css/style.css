@@ -90,12 +90,12 @@
     font-weight: 600;
 }
 
-/* =========================================== */
-/* ==   ATTRACTIVE STYLES FOR PRODUCTS PAGE   == */
-/* =========================================== */
+
+/* STYLES FOR PRODUCTS PAGE */
+
 
 /* --- General Page Body --- */
-/* Use a soft, warm background for the products page content area */
+
 .products {
     background-color: #fdfaf6;
     padding-top: 80px;
@@ -109,6 +109,7 @@
     color: var(--text-color);
     margin-bottom: 10px;
     letter-spacing: 1px;
+    margin-top: 50px;
 }
 
 .products .heading p {
@@ -175,7 +176,7 @@
 .product-container .box img {
     width: 100%;
     height: 250px;
-    object-fit: cover; /* Use cover for a better look */
+    object-fit: contain; /* Use cover for a better look */
     padding: 0;
     background: none;
     border-radius: 0;
