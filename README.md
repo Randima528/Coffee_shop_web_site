@@ -31,6 +31,19 @@ A fully responsive and dynamic e-commerce website for a coffee shop named "Golde
 
 ---
 
+## 📸 Preview  
+
+<img width="1917" height="866" alt="Admin_Panel" src="https://github.com/user-attachments/assets/16579d1c-d43a-4678-ac98-01c277968a30" />
+<img width="1919" height="870" alt="Dashboard" src="https://github.com/user-attachments/assets/2b96f745-de0d-4e5f-92cd-1e9dd154317e" />
+<img width="1916" height="865" alt="Add_Product" src="https://github.com/user-attachments/assets/12d0daf9-5549-4961-bb9b-f3a86b35906f" />
+<img width="1919" height="872" alt="Home" src="https://github.com/user-attachments/assets/b602768f-b3ed-4bbc-b0e4-bf6d7955478a" />
+<img width="1918" height="866" alt="About_Us" src="https://github.com/user-attachments/assets/0f8b9c52-7d4b-47bc-9153-b0dcf49eec9c" />
+<img width="1919" height="869" alt="Products" src="https://github.com/user-attachments/assets/0e2aaf34-5270-4fd9-a2ab-ceaac22779fa" />
+<img width="1917" height="862" alt="Customers" src="https://github.com/user-attachments/assets/a8a00765-8c87-4d5d-b5f7-ebe920b5feeb" />
+<img width="1918" height="866" alt="Cart" src="https://github.com/user-attachments/assets/ad28b444-a9f5-4e6f-95f5-faaa1d8d5f71" />
+
+---
+
 ## 🚀 Installation and Setup
 
 No complex build tools are required. You can run this project locally with these simple steps:
